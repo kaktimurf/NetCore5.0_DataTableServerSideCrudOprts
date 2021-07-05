@@ -1,0 +1,85 @@
+﻿@model Dictionary<string, List<string>>
+@{
+}
+<div class="container mt-3">
+    <select id="selectList" class="form-control-sm mb-3">
+        @foreach (var item in Model.Keys)
+        {
+            <option value="@item">@item</option>
+
+        }
+
+    </select>
+    <table id="dataTable">
+        <thead>
+            <tr id="tr">
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+
+
+@section Styles{
+    <link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap4.min.css" asp-append-version="true" />
+
+}
+
+@section Scripts{
+
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/lib/datetime-moment/datetime-moment.js" asp-append-version="true"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+    <script src="~/js/categoryApp.js" asp-append-version="true"></script>
+}
+
+<script>
+    
+
+    var url = "";
+    var columns = [];
+    $("#selectList").change(function () {
+
+        var selected = $("#selectList option:selected").val();
+        const dataTable = $("#dataTable >thead>tr");
+
+
+        console.log(selected)
+        if (selected === "Categories") {
+
+
+            $("#dataTable").html(`
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Creation Date</th>
+                <th></th>
+                <th></th>`
+            );
+            getScript("< script src = '~/js/categoryApp.js' ><'/script>", function (data) {
+                console.log(data);
+            })
+        }
+        else if (selected === "Product") {
+            //dataTable.html().replace("");
+            dataTable.html(`
+                <th>Id</th>
+                <th>Name</th>
+
+                <th>Description</th>
+                <th>CreatedDate</th>
+                <th>Stock</th>
+                <th>Price</th> `
+            );
+            url = "/Home/GetProductJson";
+
+
+            console.log(url)
+            console.log(columns)
+        }
+    });
+
+</script>

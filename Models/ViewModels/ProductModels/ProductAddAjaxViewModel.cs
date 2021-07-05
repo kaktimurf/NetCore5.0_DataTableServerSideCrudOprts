@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ServerSide.Models.ViewModels
+namespace ServerSide.Models.ViewModels.ProductModels
 {
-    public class CategoryAddAjaxViewModel
+    public class ProductAddAjaxViewModel
     {
-        public string PartialAddCategory { get; set; }
+        public string PartialAddProduct { get; set; }
     }
 }

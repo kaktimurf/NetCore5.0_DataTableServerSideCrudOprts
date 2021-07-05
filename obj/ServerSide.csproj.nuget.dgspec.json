@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kakti\\source\\repos\\ServerSide\\ServerSide.csproj": {}
+    "C:\\Users\\kakti\\Desktop\\ServerSide\\ServerSide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kakti\\source\\repos\\ServerSide\\ServerSide.csproj": {
+    "C:\\Users\\kakti\\Desktop\\ServerSide\\ServerSide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kakti\\source\\repos\\ServerSide\\ServerSide.csproj",
+        "projectUniqueName": "C:\\Users\\kakti\\Desktop\\ServerSide\\ServerSide.csproj",
         "projectName": "ServerSide",
-        "projectPath": "C:\\Users\\kakti\\source\\repos\\ServerSide\\ServerSide.csproj",
+        "projectPath": "C:\\Users\\kakti\\Desktop\\ServerSide\\ServerSide.csproj",
         "packagesPath": "C:\\Users\\kakti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kakti\\source\\repos\\ServerSide\\obj\\",
+        "outputPath": "C:\\Users\\kakti\\Desktop\\ServerSide\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

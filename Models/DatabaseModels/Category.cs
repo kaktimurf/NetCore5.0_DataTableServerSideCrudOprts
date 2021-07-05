@@ -13,7 +13,7 @@ namespace ServerSide.Models.DatabaseModels
         public string Name { get; set; }
         [Required(ErrorMessage = "Name is required")]
         public string Description { get; set; }
-        public DateTime CreationDate { get; set; } = DateTime.Now;
+        public DateTime CreationDate { get; set; }
         public ICollection<Product> Products { get; set; }
     }
 }
