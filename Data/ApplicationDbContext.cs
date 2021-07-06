@@ -14,8 +14,6 @@ namespace ServerSide.Data
             : base(options)
         {
         }
-
-        public DbSet<TestRegister> TestRegisters { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
     }
